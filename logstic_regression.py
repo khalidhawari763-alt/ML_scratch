@@ -78,7 +78,7 @@ w, b = gradient_descent(x, y, w_init, b_init, alpha, num_iters,lambda_)
 print("Final weights:", w)
 print("Final bias:", b)
 
-# اختبار نموذجك على البيانات نفسها
+ا
 def predict(x, w, b):
     z = f_x(x,w,b)
     return 1 if sig_moid(z)>0.5 else 0
@@ -90,9 +90,9 @@ print("Actual labels:", y)
 plt.scatter(x[y==0][:,0], x[y==0][:,1], color='blue', label='Class 0')
 plt.scatter(x[y==1][:,0], x[y==1][:,1], color='red', label='Class 1')
 
-# رسم decision boundary
+
 x1_vals = np.linspace(0, 3.5, 100)
-x2_vals = -(w[0]*x1_vals + b)/w[1]  # من w1*x1 + w2*x2 + b = 0
+x2_vals = -(w[0]*x1_vals + b)/w[1] 
 plt.plot(x1_vals, x2_vals, color='green', label='Decision Boundary')
 
 plt.xlabel('x1')
